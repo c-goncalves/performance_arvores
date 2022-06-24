@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1655225892 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/avl.c
+
+1655225988 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/LLRB.c
+
+1655869664 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/main.c
+	<stdio.h>
+	<stdlib.h>
+	"tree_performance.h"
+	"arvAVL.h"
+
+1655653761 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/tree_performance.c
+	<stdio.h>
+	<stdlib.h>
+	"tree_performance.h"
+
+1655870031 /home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/tree_performance.h
+
+1652474018 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/arvoreLLRB.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreLLRB.h"
+
+1652471756 /home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/arvoreLLRB.h
+
+1655862130 /home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/arvAVL.h
+
+1655870031 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/arvAVL.c
+	<stdio.h>
+	<stdlib.h>
+	"tree_performance.h"
+
