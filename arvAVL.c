@@ -8,7 +8,7 @@ struct NO{
     struct NO *esq;
     struct NO *dir;
 };
-// Funcoes auxiliares
+//  Funcoes auxiliares
 int alt_no(struct NO *no){
     if(no==NULL){
         return -1;
@@ -27,7 +27,7 @@ int maior(int x, int y){
         return(y);
     }
 }
-//Rotacoes
+//  Rotacoes
 void rotacaoLL(ArvAVL *raiz){
     struct NO *no;
     no = (*raiz)->esq;
@@ -55,7 +55,16 @@ void rotacaoRL(ArvAVL *raiz){
     rotacaoRR(raiz);
 }
 
-//Insert
+//Criar a arvore
+ArvAVL *cria_arvAVL(){
+    ArvAVL *raiz = (ArvAVL*)malloc(sizeof(ArvAVL));
+    if(raiz != NULL){
+        *raiz=NULL;
+    }
+    return raiz;
+};
+
+//  Inserindo elementos
 int insere_arvAVL(ArvAVL *raiz, FUNCIONARIO info){
     int res;
     if(*raiz == NULL){
@@ -108,7 +117,7 @@ int insere_arvAVL(ArvAVL *raiz, FUNCIONARIO info){
 
 }
 
-//Remocao
+//  Removendo elementos
 struct NO *procuramenor(struct NO *atual){
     struct NO *no1 = atual;
     struct NO *no2 = atual->esq;
@@ -180,17 +189,6 @@ int remove_arvAVL(ArvAVL *raiz, FUNCIONARIO info){
 }
 
 
-
-
-//Criar a arvore
-ArvAVL *cria_arvAVL(){
-    ArvAVL *raiz = (ArvAVL*)malloc(sizeof(ArvAVL));
-    if(raiz != NULL){
-        *raiz=NULL;
-    }
-    printf("\n\nArvore AVL criada com sucesso\n\n");
-    return raiz;
-};
 //Liberar a memoria da lista dinamica
 void libera_NO(struct NO *no){
     if(no == NULL){
@@ -203,17 +201,15 @@ void libera_NO(struct NO *no){
 
 void liberar_arvAVL(ArvAVL *raiz){
     if(raiz == NULL){
-        printf("Erro na destruicao Arvore AVL");
         return;
 
     }
     libera_NO(*raiz);
     free(raiz);
-    printf("Arvore AVL destruida com sucesso");
 };
 
 
-//Num total de nós
+//  Contagem de nós
 int totalNO_arvAVL(ArvAVL *raiz){
      if(raiz == NULL){
         return 0;
@@ -289,6 +285,7 @@ struct NO *remove_atual(struct NO *atual){
     return no2;
 }
 
+//  Estado da AVL
 int vazia_arvAVL(ArvAVL *raiz){
     if(raiz == NULL){
         return 1;
@@ -298,6 +295,8 @@ int vazia_arvAVL(ArvAVL *raiz){
     }
     return 0;
 };
+
+// Altura da AVL
 int altura_arvAVL(ArvAVL *raiz){
     if(raiz == NULL){
         return 0;
