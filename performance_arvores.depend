@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1656032902 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/arvAVL.c
+	<stdio.h>
+	<stdlib.h>
+	"perf_arvores.h"
+
+1656032881 /home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/perf_arvores.h
+
+1656032891 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/main.c
+	<stdio.h>
+	<stdlib.h>
+	"perf_arvores.h"
+	<time.h>
+
+1656032879 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/perf_arvores.c
+	<stdio.h>
+	<stdlib.h>
+	"perf_arvores.h"
+

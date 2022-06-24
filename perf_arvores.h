@@ -1,4 +1,5 @@
 
+
 typedef struct{
     int p;
     char nome[30];

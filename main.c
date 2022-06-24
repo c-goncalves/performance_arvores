@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "tree_performance.h"
+#include "perf_arvores.h"
 #include <time.h>
 
 int main()
