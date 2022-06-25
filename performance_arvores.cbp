@@ -34,7 +34,6 @@
 		<Unit filename="arvAVL.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="arvAVL.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -1,6 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include "perf_arvores.h"
+#include <stdio.h>
+#include "lib.h"
 
 struct NO{
     FUNCIONARIO dados;
