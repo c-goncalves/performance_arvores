@@ -10,7 +10,7 @@ typedef struct{
 }FUNCIONARIO;
 
 //  Leitura do arquivo
-int file_ord();
+void ordenar_file();
 int *ler_dados(int opc);
 int n_linhas_file();
 int *lerArquivo(int opc);
