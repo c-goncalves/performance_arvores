@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1656112610 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/arvAVL.c
+1656447137 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/arvAVL.c
 	<stdlib.h>
 	<stdio.h>
 	"lib.h"
 
 1656105753 /home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/perf_arvores.h
 
-1656190582 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/main.c
+1656461353 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -29,11 +29,16 @@
 
 1656110790 /home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/ler_dados.h
 
-1656190903 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/ler_dados.c
+1656460667 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/ler_dados.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"lib.h"
 
-1656190903 /home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/lib.h
+1656447150 /home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/lib.h
+
+1656460459 source:/home/cora/Documents/git/data_structures_intermediary/projeto2/tree_performances/ArvoreRB.c
+	<stdio.h>
+	<stdlib.h>
+	"lib.h"
 

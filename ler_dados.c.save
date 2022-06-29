@@ -50,11 +50,11 @@ int *lerArquivo(int opc){
             return 1;
         }
 
-    }while(!feof(file));
+    }while(linha<20);
     fclose(file);
 
     return dados;
-
+//!feof(file)
 }
 
 int n_linhas_file(){
@@ -79,16 +79,15 @@ int n_linhas_file(){
 
 }
 
-// Funcao de comparacado do campo codigo (p)
-int compara(FUNCIONARIO *a, FUNCIONARIO *b){
 
+int compara(FUNCIONARIO *a, FUNCIONARIO *b){
+    // Comparacado do campo codigo (p)
     if(a->p == b->p)
         return 0;
     else if(a->p > b->p)
         return 1;
     else
         return -1;
-
 }
 
 void ordenar_file(){
@@ -101,8 +100,6 @@ void ordenar_file(){
 
     // Inserindo dados do arquivo no vetor
     dados = lerArquivo(1);
-
-
 
     // Organizando o vetor
     qsort(&(*dados), n_linhas, sizeof(FUNCIONARIO), compara);
@@ -127,10 +124,10 @@ void ordenar_file(){
                 dados[linha].departamento,
                 dados[linha].salario
                 );
-                if(campos_lidos == 6) linha++;
-
+                if(campos_lidos != 0) linha++;
 
     }while(linha<=n_linhas-1);
+
     fclose(f_ordenado);
     free(dados);
 

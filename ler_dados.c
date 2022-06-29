@@ -52,9 +52,8 @@ int *lerArquivo(int opc){
 
     }while(!feof(file));
     fclose(file);
-
     return dados;
-
+//!feof(file)
 }
 
 int n_linhas_file(){

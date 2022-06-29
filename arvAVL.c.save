@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "arvAVL.h"
+#include "lib.h"
 
 struct NO{
     FUNCIONARIO dados;
@@ -65,7 +65,7 @@ ArvAVL *cria_arvAVL(){
 };
 
 //  Inserindo elementos
-int insere_arvAVL(ArvAVL *raiz, FUNCIONARIOS info){
+int insere_arvAVL(ArvAVL *raiz, FUNCIONARIO info){
     int res;
     if(*raiz == NULL){
         struct NO *novo;
@@ -202,7 +202,6 @@ void libera_NO(struct NO *no){
 void liberar_arvAVL(ArvAVL *raiz){
     if(raiz == NULL){
         return;
-
     }
     libera_NO(*raiz);
     free(raiz);

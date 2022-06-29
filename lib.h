@@ -18,6 +18,7 @@ int *lerArquivo(int opc);
 
 // ARVORE AVL
 typedef struct NO *ArvAVL;
+
 ArvAVL *cria_arvAVL();
 int insere_arvAVL(ArvAVL *raiz, FUNCIONARIO info);
 int remove_arvAVL(ArvAVL *raiz, FUNCIONARIO info);
@@ -30,4 +31,19 @@ int totalNO_arvAVL(ArvAVL *raiz);
 void preOrdem_arvAVL(ArvAVL *raiz);
 void posOrdem_arvAVL(ArvAVL *raiz);
 
-// Arvore Rubro-Negra
+
+// ABB RUBRO NEGRO 2-3
+typedef struct NO* ArvLLRB;
+
+ArvLLRB *cria_ArvLLRB();
+void libera_ArvLLRB(ArvLLRB* raiz);
+int insere_ArvLLRB(ArvLLRB* raiz,FUNCIONARIO valor);
+int remove_ArvLLRB(ArvLLRB *raiz, FUNCIONARIO valor);
+void emOrdem_ArvLLRB(ArvLLRB *raiz,int H);
+
+int estaVazia_ArvLLRB(ArvLLRB *raiz);
+int totalNO_ArvLLRB(ArvLLRB *raiz);
+int altura_ArvLLRB(ArvLLRB *raiz);
+void preOrdem_ArvLLRB(ArvLLRB *raiz, int H);
+
+void posOrdem_ArvLLRB(ArvLLRB *raiz, int H);

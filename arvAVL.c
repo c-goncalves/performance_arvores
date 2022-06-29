@@ -202,7 +202,6 @@ void libera_NO(struct NO *no){
 void liberar_arvAVL(ArvAVL *raiz){
     if(raiz == NULL){
         return;
-
     }
     libera_NO(*raiz);
     free(raiz);

@@ -31,16 +31,19 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="ArvoreRB.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="arvAVL.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="ler_dados.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="perf_arvores.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="perf_arvores.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
